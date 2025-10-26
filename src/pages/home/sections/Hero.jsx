@@ -2,15 +2,18 @@ import Akokor from "../../../../public/images/Akokor1.jpg"
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[100vh]">
+    <section
+      id="hero"
+      className="relative min-h-[100vh]" // ✅ use <section> with id for scrolling
+    >
       {/* Background Image with Darker Overlay */}
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${Akokor})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
         }}
       >
         {/* Darker Overlay */}
@@ -27,7 +30,7 @@ const Hero = () => {
               <br />
               <span className="text-[#FFC107]">Stronger Chicks!</span>
             </h1>
-            
+
             <p className="text-xl font-opensans text-gray-200 mb-8 max-w-2xl">
               Revolutionizing small-scale poultry farming with our innovative
               solar-powered brooder box system. Ensure optimal temperature control
@@ -35,14 +38,18 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              {/* <a
-                href="/products"
+              {/* Uncomment if needed later
+              <a
+                href="#products"
                 className="px-8 py-3 bg-[#FFC107] text-black font-opensans rounded-full hover:bg-[#FFC107]/80 transition-colors duration-300 text-lg font-bold"
               >
                 Explore Products
-              </a> */}
+              </a> 
+              */}
               <a
                 href="https://wa.me/233540637441"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-white text-white font-opensans rounded-full hover:bg-white hover:text-black transition-all duration-300 text-lg font-bold"
               >
                 Contact Us
@@ -51,25 +58,24 @@ const Hero = () => {
 
             {/* Key Features */}
             <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {[
-                "Solar Powered",
-                "Temperature Control",
-                "Cost Effective",
-                "Eco-Friendly",
-              ].map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center lg:justify-start space-x-2"
-                >
-                  <div className="w-2 h-2 bg-[#FFC107] rounded-full"></div>
-                  <span className="font-opensans text-gray-200 font-semibold">{feature}</span>
-                </div>
-              ))}
+              {["Solar Powered", "Temperature Control", "Cost Effective", "Eco-Friendly"].map(
+                (feature, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-center lg:justify-start space-x-2"
+                  >
+                    <div className="w-2 h-2 bg-[#FFC107] rounded-full"></div>
+                    <span className="font-opensans text-gray-200 font-semibold">
+                      {feature}
+                    </span>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
