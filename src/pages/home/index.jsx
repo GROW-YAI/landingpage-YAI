@@ -4,7 +4,7 @@ import AboutProduct from "./sections/AboutProduct";
 import AboutInnovator from "./sections/AboutInnovator";
 import Showcase from "./sections/Showcase";
 import Contact from "./sections/Contact";
-import SuccessStory from "./sections/SuccessStory";
+// import SuccessStory from "./sections/SuccessStory";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <AboutProduct />
       <AboutInnovator />
       <Showcase />
-      <SuccessStory />
+      {/* <SuccessStory /> */}
       <Contact />
       
     </div>

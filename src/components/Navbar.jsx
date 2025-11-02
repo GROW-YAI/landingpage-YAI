@@ -4,10 +4,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { title: "Home", href: "#home" },
+    { title: "Home", href: "#hero" },
     { title: "Products", href: "#products" },
     { title: "Benefits", href: "#benefits" },
-    { title: "Success Stories", href: "#stories" },
+    // { title: "Success Stories", href: "#stories" },
     { title: "Contact", href: "#contact" },
   ];
 
