@@ -5,7 +5,7 @@ import Fowl from "../../../../public/images/Akokor3.jpg";
 const AboutProduct = () => {
   const productDetails = {
     name: "Solar-Powered Chicks Brooder Box",
-    description: "An innovative, temperature-controlled brooder box that provides consistent heat for day-old chicks using solar or electric power. The system ensures optimal warmth, reducing mortality rates and improving poultry productivity.",
+    description: "An innovative, temperature-controlled brooder box that provides consistent heat for day-old chicks using solar or electric power. The systems ensures optimal warmth, reducing mortality rates and improving poultry productivity.",
     usps: [
       {
         title: "Dual Power Mode",
