@@ -61,7 +61,7 @@ const Showcase = () => {
         </div>
 
         {/* Product Display */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="flex flex-col lg:flex-row gap-80 mb-16">
           {/* Product Image */}
           <div className="relative">
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden bg-[#FFC107] bg-opacity-10">
